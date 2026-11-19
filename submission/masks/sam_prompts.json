@@ -1,0 +1,101 @@
+[
+  {
+    "image": "img_003.jpg",
+    "target": "motorbike",
+    "source_id": 5,
+    "positive": [
+      [
+        952,
+        308
+      ],
+      [
+        984,
+        383
+      ]
+    ],
+    "negative": [
+      [
+        884,
+        292
+      ]
+    ],
+    "box": [
+      818,
+      266,
+      1019,
+      430
+    ],
+    "output": "img_003_motorbike.jpg",
+    "log": "Mask: 15190 px (2.2% \u1ea3nh), 2 polygon -> submission/masks/img_003_motorbike.jpg",
+    "iou_r07": 0.834,
+    "overlap_other_people_px": 12,
+    "area": 15190,
+    "points_pass": 3
+  },
+  {
+    "image": "img_004.jpg",
+    "target": "tuktuk",
+    "source_id": 26,
+    "positive": [
+      [
+        672,
+        382
+      ],
+      [
+        528,
+        464
+      ]
+    ],
+    "negative": [
+      [
+        587,
+        552
+      ]
+    ],
+    "box": [
+      465,
+      227,
+      830,
+      593
+    ],
+    "output": "img_004_tuktuk.jpg",
+    "log": "Mask: 96147 px (13.8% \u1ea3nh), 1 polygon -> submission/masks/img_004_tuktuk.jpg",
+    "iou_r07": 0.951,
+    "overlap_other_people_px": 329,
+    "area": 96147,
+    "points_pass": 3
+  },
+  {
+    "image": "img_013.jpg",
+    "target": "person",
+    "source_id": 99,
+    "positive": [
+      [
+        678,
+        290
+      ],
+      [
+        747,
+        387
+      ]
+    ],
+    "negative": [
+      [
+        658,
+        467
+      ]
+    ],
+    "box": [
+      613,
+      187,
+      859,
+      512
+    ],
+    "output": "img_013_person.jpg",
+    "log": "Mask: 31542 px (4.5% \u1ea3nh), 2 polygon -> submission/masks/img_013_person.jpg",
+    "iou_r07": 0.874,
+    "overlap_other_people_px": 0,
+    "area": 31542,
+    "points_pass": 3
+  }
+]
