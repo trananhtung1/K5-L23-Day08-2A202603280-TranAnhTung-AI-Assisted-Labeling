@@ -2,7 +2,9 @@
   <img src="docs/assets/hero.png" alt="Day 08 Lab: AI hỗ trợ gán nhãn" width="100%">
 </p>
 
-# Day 08 Lab — AI hỗ trợ gán nhãn: Pre-label, Review, Calibration
+# Day 08 Lab — 2A202603280 - Trần Anh Tùng
+
+Lượt kiểm tra tự động trên 24 ảnh phát hiện 3/12 bẫy. Quyết định **Rework** vì kết quả thấp hơn ngưỡng 80% của lab. [Báo cáo đầy đủ](submission/REPORT.md) · [Nhãn sau QC](submission/release/final_det.coco.json)
 
 <p align="center">
   <img alt="cá nhân" src="https://img.shields.io/badge/lab-cá%20nhân-0b1f3a">

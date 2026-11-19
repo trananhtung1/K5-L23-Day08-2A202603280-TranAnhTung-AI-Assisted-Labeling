@@ -1,1 +1,3 @@
 step,images,minutes,note
+gold_manual,4,22,Gán tay 4 ảnh gold trong CVAT trước khi chạy model
+batch_review,24,2.627,"Lượt riêng do Codex thực hiện bằng thị giác máy, từ lúc bắt đầu xử lý đến export COCO, chưa gồm QC."
