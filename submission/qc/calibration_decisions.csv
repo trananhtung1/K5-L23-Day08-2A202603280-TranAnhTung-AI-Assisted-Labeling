@@ -1,1 +1,4 @@
 case_id,image,nguon,van_de,quyet_dinh,quy_tac_ghi_vao_guideline,phien_ban_guideline
+CAL-01,img_002,loi_may,YOLOE gọi xe đẩy hàng rong là three_wheeler.,Loại đề xuất cho chiếc xe đẩy đã nhận diện trong ảnh.,"Chỉ chọn three_wheeler khi xác định được đó là phương tiện thuộc nhóm tuk-tuk, xích lô hoặc ba gác.",v1.1 (lượt duyệt tự động)
+CAL-02,img_013,loi_may,YOLO26 gọi tuk-tuk là car. Box xe và box người đều ôm thiếu.,"Tách người và xe, gán xe là three_wheeler.",Kiểm tra riêng đường bao phần nhìn thấy của xe và của người trước khi tạo mask từ box.,v1.1 (lượt duyệt tự động)
+CAL-03,img_036,cau_hoi_mo,Câu 7 mục 6 hỏi có thể dùng một ngưỡng điểm để tự động chấp nhận box hay không.,"Giữ motorbike từ 0,10 ở bước tạo đề xuất. Vẫn đối chiếu lớp và biên khi duyệt.",Ngưỡng đưa box vào danh sách duyệt và tiêu chí chấp nhận box là hai bước riêng.,v1.1 (lượt duyệt tự động)

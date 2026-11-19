@@ -1,0 +1,10 @@
+{
+ "reviewer": "Codex, offline",
+ "images": 24,
+ "original_boxes": 634,
+ "final_boxes": 620,
+ "measured_minutes": 2.627,
+ "sha256": "c367c64bd30684b65c99d25e8ce240f25c46070f21a45fc96f1f7b6e9440acb2",
+ "start": "2026-11-19T13:50:05.775774+07:00",
+ "export": "2026-11-19T13:52:43.397561+07:00"
+}

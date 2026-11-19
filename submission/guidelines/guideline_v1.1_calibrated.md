@@ -1,23 +1,21 @@
-# Label contract — Phố châu Á — BỔ SUNG v1.1 — <<MSHV - Họ tên>>
+# Bổ sung guideline v1.1 — 2A202603280 - Trần Anh Tùng
 
-> **Chỉ viết phần thay đổi so với v1.0** (không copy cả file). Chốt các câu hỏi mở ở mục 6 của v1.0 (hoặc nói rõ câu nào chưa chốt, vì sao)
-> và thêm quy tắc mới rút ra từ lỗi của máy / lỗi của bạn. Mỗi ca khó **có ảnh ví dụ** (`img_0xx`) và khớp một dòng trong `qc/calibration_decisions.csv`.
+Bản bổ sung dựa trên ba ca đã ghi nhận. Hai ca đầu dùng nhận xét khi xem ảnh. Ca thứ ba đối chiếu dự đoán với gold. Các quyết định tương ứng nằm trong [bảng calibration](../qc/calibration_decisions.csv).
 
-## 1. Câu hỏi mở đã chốt (từ mục 6 của v1.0)
+## 1. Điểm tin cậy khi duyệt
 
-| # | Câu hỏi | Quyết định | Ảnh ví dụ | `case_id` |
-|---|---|---|---|---|
-| <<1>> | <<xe đạp điện: bicycle hay motorbike?>> | <<>> | <<img_0xx>> | <<CAL-01>> |
+**CAL-03 · img_036 · mục 6, câu 7.** Chiếc xe máy có điểm 0,1165 và IoU 0,9715 với box gold. Ngưỡng 0,10 giữ chiếc xe trong danh sách duyệt. Khi xét giữ box, kiểm tra lớp và bốn cạnh trên ảnh. Sáu câu hỏi còn lại của mục 6 vẫn mở vì ba ca dưới đây chưa đủ để chốt chúng.
 
-## 2. Ca khó mới (từ lỗi của máy, bẫy lọt, box `can_review`)
+## 2. Xe đẩy hàng và người trên tuk-tuk
 
-| Ảnh | Tình huống | Máy làm gì (model nào) | Quyết định của bạn | Quy tắc mới (vào mục nào của v1.0) |
-|---|---|---|---|---|
-| <<img_0xx>> | <<>> | <<>> | <<>> | <<>> |
+| Ca | Dấu hiệu trong ảnh | Cách xử lý |
+|---|---|---|
+| CAL-01 · img_002 | YOLOE đặt box xe ba bánh lên xe đẩy của người bán hàng. | Loại đề xuất cho chiếc xe đẩy. Với phương tiện chở hàng, đối chiếu hình dạng với các lớp xích lô và ba gác trước khi chọn nhãn. |
+| CAL-02 · img_013 | Tuk-tuk bị gọi là ô tô. Box chỉ phủ một phần xe, và box người trên xe cũng thiếu. | Chọn `three_wheeler` cho xe. Kiểm tra riêng phần người nhìn thấy và giữ box `person` riêng. Sửa box trước khi dùng làm đầu vào cho SAM. |
 
 ## 3. Lịch sử thay đổi
 
-| Phiên bản | Thay đổi | Lý do (ca nào, `case_id`) |
-|---|---|---|
-| v1.0 | Bản giảng viên | — |
-| v1.1 | <<tóm tắt các thay đổi ở mục 1–2>> | <<>> |
+| Phiên bản | Nội dung |
+|---|---|
+| v1.0 | Quy tắc gốc về lớp, box, mask và vùng bỏ qua. |
+| v1.1 (lượt duyệt tự động) | Bổ sung cách xử lý xe đẩy, người trên tuk-tuk và box xe máy có điểm thấp. |

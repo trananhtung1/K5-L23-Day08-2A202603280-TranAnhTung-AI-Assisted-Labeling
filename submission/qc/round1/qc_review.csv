@@ -1,0 +1,8 @@
+image,object_id,error_type,reviewer,note
+img_003.jpg,,khong,Codex (QC tự động),"Đã đối chiếu 27 nhãn, crop, mask và 3 bộ khớp. Không phát hiện lỗi đủ căn cứ bằng các phép kiểm này."
+img_006.jpg,,khong,Codex (QC tự động),"Đã đối chiếu 33 nhãn, crop, mask và 5 bộ khớp. Không phát hiện lỗi đủ căn cứ bằng các phép kiểm này."
+img_008.jpg,,bo_sot,Codex (QC tự động),Bộ xương 8 điểm nằm ngoài các box person. Box mới bao vùng khớp và được đánh dấu cần xác nhận biên.
+img_014.jpg,,khong,Codex (QC tự động),"Đã đối chiếu 24 nhãn, crop, mask và 4 bộ khớp. Không phát hiện lỗi đủ căn cứ bằng các phép kiểm này."
+img_017.jpg,,khong,Codex (QC tự động),"Đã đối chiếu 7 nhãn, crop, mask và 2 bộ khớp. Không phát hiện lỗi đủ căn cứ bằng các phép kiểm này."
+img_033.jpg,,khong,Codex (QC tự động),"Đã đối chiếu 19 nhãn, crop, mask và 1 bộ khớp. Không phát hiện lỗi đủ căn cứ bằng các phép kiểm này."
+img_034.jpg,,bo_sot,Codex (QC tự động),Bộ xương 14 điểm nằm ngoài các box person. Box mới bao vùng khớp và được đánh dấu cần xác nhận biên.
